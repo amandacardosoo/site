@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Minha Escola</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6f0ff;
+
+    /* ANIMAÇÃO DE ENTRADA */
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+/* MENU */
+nav {
+    background-color: #27408b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+/* ANIMAÇÃO DO MENU */
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* CAPA */
+header {
+    height: 350px;
+    background: linear-gradient(rgba(39,64,139,0.7), rgba(65,105,225,0.7)),
+    url('https://www.pi.gov.br/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-14-at-17.07.59-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TÍTULO */
+header h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* BOTÃO */
+.botao {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #4169e1;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #27408b;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* TEXTO */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section h2 {
+    color: #27408b;
+}
+
+section p {
+    font-size: 18px;
+    color: #333;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="horario.html">Horário</a>
+</nav>
+
+<header>
+    <h1>Bem-vindo à Escola</h1>
+    <a href="horario.html" class="botao">Ver Horário</a>
+</header>
+
+<section>
+    <h2>Sobre a Escola</h2>
+    <p>Este site foi criado para facilitar o acesso ao horário escolar e informações importantes dos alunos.</p>
+</section>
+
+</body>
+</html>

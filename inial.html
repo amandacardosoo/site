@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Horário Escolar</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6f0ff;
+}
+
+/* MENU */
+nav {
+    background-color: #27408b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CAPA COM IMAGEM */
+header {
+    height: 300px;
+    background: linear-gradient(rgba(39,64,139,0.7), rgba(65,105,225,0.7)),
+    url('https://www.pi.gov.br/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-14-at-17.07.59-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TÍTULO */
+header h1 {
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* TABELA */
+table {
+    margin: 30px auto;
+    width: 90%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+th {
+    background-color: #4169e1;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f6ff;
+}
+
+tr:nth-child(even) td {
+    background-color: #dbe7ff;
+}
+
+tr:hover td {
+    background-color: #c7d8ff;
+    transition: 0.3s;
+}
+
+/* INTERVALOS */
+.intervalo {
+    background-color: #b3ccff !important;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="horario.html">Horário</a>
+</nav>
+
+<header>
+    <h1>Horário Escolar</h1>
+</header>
+
+<table>
+<tr>
+    <th>Horário</th>
+    <th>Segunda</th>
+    <th>Terça</th>
+    <th>Quarta</th>
+    <th>Quinta</th>
+    <th>Sexta</th>
+</tr>
+
+<tr><td>07:30 - 08:30</td><td>Física</td><td>História</td><td>Rec. Português</td><td>EPT</td><td>EPT</td></tr>
+<tr><td>08:30 - 09:30</td><td>Matemática</td><td>Rec.Português</td><td>Química</td><td>Matemática</td><td>Português</td></tr>
+
+<tr class="intervalo"><td>09:30 - 09:50</td><td colspan="5">Lanche da Manhã</td></tr>
+
+<tr><td>09:50 - 10:50</td><td>IA</td><td>Clube da Leitura</td><td>Biologia</td><td>Química</td><td>Física</td></tr>
+<tr><td>10:50 - 11:50</td><td>Clube da Leitura</td><td>Horário de Estudo</td><td>Matemática</td><td>EPT</td><td>Português</td></tr>
+
+<tr class="intervalo"><td>11:50 - 12:50</td><td colspan="5">Almoço</td></tr>
+
+<tr><td>12:50 - 13:50</td><td>Projeto de Vida</td><td>Inglês</td><td>EPT</td><td>EPT</td><td>EPT</td></tr>
+<tr><td>13:50 - 14:50</td><td>Artes</td><td>Rec.Inglês</td><td>EPT</td><td>Biologia</td><td>Sociologia</td></tr>
+
+<tr class="intervalo"><td>14:50 - 15:10</td><td colspan="5">Café da Tarde</td></tr>
+
+<tr><td>15:10 - 16:10</td><td>Educação Financeira</td><td>Espanhol</td><td>Educação física</td><td>EPT</td><td>EPT</td></tr>
+<tr><td>16:10 - 17:00</td><td>Rec.Matemática</td><td>Geografia</td><td>Filosofia</td><td>História</td><td>EPT</td></tr>
+
+</table>
+
+</body>
+</html>
